@@ -1,0 +1,57 @@
+{
+    "nbounces":32, 
+    "nsamples":32,
+    "use_denoiser": false,
+    "rendermode":"binary",
+    "use_tone_mapping":true,
+    "use_stratified_sampling": true,
+    "camera":
+        { 
+            "type":"pinhole", 
+            "width":1200, 
+            "height":800,
+            "position":[0.0, 1, -5],
+            "lookAt":[0.0, 0.35, 1.0],
+            "upVector":[0.0, 1.0, 0.0],
+            "fov":90.0,
+            "exposure":0.1
+        },
+    "scene":
+        { 
+            "backgroundcolor": [0.25, 0.25, 0.25], 
+            "lightsources":[ 
+                { 
+                    "type":"pointlight", 
+                    "position":[0, 1.0, 0.5], 
+                    "intensity":[0.5, 0.5, 0.5] 
+                },
+                { 
+                    "type":"pointlight", 
+                    "position":[0, 1.0, -0.5], 
+                    "intensity":[0.5, 0.5, 0.5] 
+                }
+            ], 
+            "shapes":[ 
+                {
+                    "type": "rectangle",
+                    "v0": [-3, 0, 3],
+                    "v1": [-1, 0, 3],
+                    "v2": [-1, 0, -3],
+                    "v3": [-3, 0, -3],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.2, 0.2, 0.2]
+                    }
+                  },
+                  {
+                    "type": "rectangle",
+                    "corner1": [1, 0, 3],
+                    "corner2": [3, 0, -3],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.2, 0.2, 0.2]
+                    }
+                  }
+            ] 
+        } 
+}

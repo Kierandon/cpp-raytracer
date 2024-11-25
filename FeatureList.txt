@@ -1,0 +1,27 @@
+1(a) Image Writing: Implemented and detailed in report.
+
+1(b) Virtual Pin-hole Camera: Implemented and detailed in report. Can be seen in example renders.
+
+1(c) Intersection Tests: Implemented and detailed in report.
+
+1(d) Blinn-Phong Shading: Implemented and detailed in report. Can be seen in example renders.
+
+1(e) Shadows: Implemented and detailed in report. Can be seen in example renders.
+
+1(f) Tone Mapping: Implemented and detailed in report. Can be seen in example renders.
+
+1(g) Reflection: Implemented and detailed in report. Corresponding scene: scenes/scene_reflective.json
+
+1(h) Refraction: Implemented and detailed in report. Corresponding scene: scenes/scene_refractive_air_sphere.json
+
+2(a) Textures: Implemented and detailed in report. Corresponding scene: scenes/scene_textures.json (you might have to change the texture paths)
+
+2(b) Acceleration Hierarchy: Implemented and detailed in report. Corresponding scene: scenes/scene_bvh.json
+
+3(a) Pixel Sampling: Implemented and detailed in report. Corresponding scene: scenes/path_dof.json
+
+3(b) Lens Sampling: Implemented and detailed in report. Corresponding scene: scenes/path_dof.json
+
+3(c) BRDF Sampling: Implemented and detailed in report. Corresponding scene: scenes/cornell_box.json
+
+3(d) Light Sampling: Implemented and detailed in report. Corresponding scene: scenes/cornell_box.json

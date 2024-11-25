@@ -1,0 +1,93 @@
+{
+    "nbounces":50, 
+    "nsamples":500,
+    "use_denoiser": false,
+    "rendermode":"path",
+    "use_tone_mapping":true,
+    "use_stratified_sampling": false,
+    "use_bvh": true,
+    "use_gaussian_blur": false,
+    "use_importance_sampling": true,
+    "importance_sampling_min_samples": 50,
+    "importance_sampling_max_samples": 100,
+    "use_dof": true,
+    "aperture": 0.6,
+    "focus_distance": 6.0,
+    "camera":
+        { 
+            "type":"pinhole", 
+            "width":500, 
+            "height":500,
+            "position":[2.5, 2, -4],
+            "lookAt":[2.5, 2, 2.5],
+            "upVector":[0.0, 1.0, 0.0],
+            "fov":60.0,
+            "exposure":0.1
+        },
+    "scene":
+        { 
+            "backgroundcolor": [0.25, 0.25, 0.25], 
+            "lightsources":[
+            ], 
+            "shapes":[ 
+                {
+                    "_comment": "floor",
+                    "type": "rectangle",
+                    "v0": [0,0,5],
+                    "v1": [5,0,5],
+                    "v2": [5,0,0],
+                    "v3": [0,0,0],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.73, 0.73, 0.73]
+                    }
+                  },
+                  {
+                    "_comment": "dielectric sphere",
+                    "type": "sphere",
+                    "center": [0.5, 0.5, 0.5],
+                    "radius": 0.5,
+                    "material": {
+                      "type": "dielectric",
+                      "ior": 1.5
+                    }
+                  },
+                  {
+                    "_comment": "tall block",
+                    "type": "box",
+                    "min": [2, 0, 3],
+                    "max": [3, 3, 1],
+                    "rotation": [0, -18, 0],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.73, 0.9, 0.73]
+                    }
+                  },
+                  {
+                    "_comment": "shiny cylinder",
+                    "type": "cylinder",
+                    "center": [4, 2, 4],
+                    "radius": 1,
+                    "height": 2,
+                    "axis": [0, 1, 0],
+                    "material": {
+                      "type": "metal",
+                      "albedo": [0.9, 0.73, 0.73]
+                    }
+                  },                  
+                  {
+                    "_comment": "ceiling_light",
+                    "type": "rectangle",
+                    "v0": [0, 5, 5],
+                    "v1": [5, 5, 5],
+                    "v2": [5, 5, 0],
+                    "v3": [0, 5, 0],
+                    "material": {
+                      "type": "emissive",
+                      "colour": [1.0, 1.0, 0.8],
+                      "intensity": 12
+                    }
+                  }
+            ] 
+        } 
+}

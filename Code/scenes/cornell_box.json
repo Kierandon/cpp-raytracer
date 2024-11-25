@@ -1,0 +1,138 @@
+{
+    "nbounces":50, 
+    "nsamples":1000,
+    "use_denoiser": false,
+    "rendermode":"path",
+    "use_tone_mapping":true,
+    "use_stratified_sampling": false,
+    "use_bvh": true,
+    "use_gaussian_blur": false,
+    "use_importance_sampling": true,
+    "importance_sampling_min_samples": 50,
+    "importance_sampling_max_samples": 100,
+    "camera":
+        { 
+            "type":"pinhole", 
+            "width":1000, 
+            "height":1000,
+            "position":[278, 278, -800],
+            "lookAt":[278, 278, 0],
+            "upVector":[0.0, 1.0, 0.0],
+            "fov":40.0,
+            "exposure":0.1
+        },
+    "scene":
+        { 
+            "backgroundcolor": [0.0, 0.0, 0.0], 
+            "lightsources":[
+            ], 
+            "shapes":[ 
+                {
+                    "_comment": "floor",
+                    "type": "rectangle",
+                    "v0": [0,0,555],
+                    "v1": [555,0,555],
+                    "v2": [555,0,0],
+                    "v3": [0,0,0],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.73, 0.73, 0.73]
+                    }
+                  },
+                  {
+                    "_comment": "left_wall",
+                    "type": "rectangle",
+                    "v0": [0,555,0],
+                    "v1": [0,555,555],
+                    "v2": [0,0,555],
+                    "v3": [0,0,0],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.12, 0.45, 0.15]
+                    }
+                  },
+                  {
+                    "_comment": "back_wall",
+                    "type": "rectangle",
+                    "v0": [0,555,555],
+                    "v1": [555,555,555],
+                    "v2": [555,0,555],
+                    "v3": [0,0,555],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.73, 0.73, 0.73]
+                    }
+                  },
+                  {
+                    "_comment": "right_wall",
+                    "type": "rectangle",
+                    "v0": [555,555,555],
+                    "v1": [555,555,0],
+                    "v2": [555,0,0],
+                    "v3": [555,0,555],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.65, 0.05, 0.05]
+                    }
+                  },
+                  {
+                    "_comment": "ceiling",
+                    "type": "rectangle",
+                    "v0": [0,555,555],
+                    "v1": [555,555,555],
+                    "v2": [555,555,0],
+                    "v3": [0,555,0],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.73, 0.73, 0.73]
+                    }
+                  },
+                  {
+                    "_comment": "ceiling_light",
+                    "type": "rectangle",
+                    "v0": [212, 554, 332],
+                    "v1": [342, 554, 332],
+                    "v2": [342, 554, 227],
+                    "v3": [212, 554, 227],
+                    "material": {
+                      "type": "emissive",
+                      "colour": [1.0, 1.0, 1.0],
+                      "intensity": 45
+                    }
+                  },
+                  {
+                    "_comment": "dielectric sphere",
+                    "type": "sphere",
+                    "center": [150, 120, 200],
+                    "radius": 120,
+                    "material": {
+                      "type": "dielectric",
+                      "ior": 1.5
+                    }
+                  },
+                  {
+                    "_comment": "tall block",
+                    "type": "box",
+                    "min": [500, 0, 225],
+                    "max": [450, 375, 125],
+                    "rotation": [0, -18, 0],
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.73, 0.73, 0.73]
+                    }
+                  },
+                  {
+                    "_comment": "shiny cylinder",
+                    "type": "cylinder",
+                    "center": [435, 0, 100],
+                    "radius": 50,
+                    "height": 125,
+                    "axis": [0, 1, 0],
+                    "material": {
+                      "type": "metal",
+                      "albedo": [0.73, 0.73, 0.73]
+                    }
+                  }
+            ] 
+        } 
+}

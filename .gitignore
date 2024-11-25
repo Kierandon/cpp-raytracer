@@ -1,0 +1,52 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled static libraries
+*.lib
+*.a
+
+# Executable files
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+*.pdb
+*.ilk
+
+# Temporary files
+*.tmp
+*.temp
+Code/output.ppm
+
+# Build directories
+/build/
+/bin/
+/lib/
+/dist/
+/Debug/
+/Release/
+squash.sh
+
+# IDE specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+#cmake
+CMakeFiles/
+CMakeCache.txt

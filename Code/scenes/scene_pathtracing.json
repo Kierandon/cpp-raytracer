@@ -1,0 +1,98 @@
+{
+    "nbounces":50, 
+    "nsamples":200,
+    "use_denoiser": false,
+    "rendermode":"path",
+    "use_tone_mapping":true,
+    "use_stratified_sampling": true,
+    "camera":
+        { 
+            "type":"pinhole", 
+            "width":1200, 
+            "height":800,
+            "position":[0.0, 0.75, -0.25],
+            "lookAt":[0.0, 0.35, 1.0],
+            "upVector":[0.0, 1.0, 0.0],
+            "fov":45.0,
+            "exposure":0.1
+        },
+    "scene":
+        { 
+            "backgroundcolor": [0.25, 0.25, 0.25], 
+            "lightsources":[ 
+                { 
+                    "type":"pointlight", 
+                    "position":[0, 1.0, 0.5], 
+                    "intensity":[0.5, 0.5, 0.5] 
+                },
+                { 
+                    "type":"pointlight", 
+                    "position":[0, 1.0, -0.5], 
+                    "intensity":[0.5, 0.5, 0.5] 
+                }
+            ], 
+            "shapes":[ 
+                {
+                    "type": "sphere",
+                    "center": [0, -25.0, 0],
+                    "radius": 25.1,
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.2, 0.8, 0.2]
+                    }
+                  },
+                  {
+                    "type": "cylinder",
+                    "center": [-0.3, 0.19, 1],
+                    "axis": [0, 1, 0],
+                    "radius": 0.15,
+                    "height": 0.2,
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.2, 0.2, 0.8]
+                    }
+                  },
+                  {
+                    "type": "triangle",
+                    "v0": [0, 0.0, 2.25],
+                    "v1": [0.75, 0.0, 2],
+                    "v2": [0, 0.75, 2.25],
+                    "material": {
+                      "type": "metal",
+                      "albedo": [0.8, 0.5, 0.8],
+                      "roughness": 0
+                    }
+                  },
+                  {
+                    "type": "triangle",
+                    "v0": [0.75, 0.75, 2],
+                    "v1": [0.75, 0.0, 2],
+                    "v2": [0, 0.75, 2.25],
+                    "material": {
+                      "type": "metal",
+                      "albedo": [0.8, 0.5, 0.8],
+                      "roughness": 0
+                    }
+                  },
+                  {
+                    "type": "sphere",
+                    "center": [-0.3, 0.59, 1],
+                    "radius": 0.2,
+                    "material": {
+                      "type": "diffuse",
+                      "albedo": [0.8, 0.2, 0.2]
+                    }
+                  },
+                  {
+                    "type": "sphere",
+                    "center": [0.3, 0.29, 1],
+                    "radius": 0.2,
+                    "material": {
+                      "type": "metal",
+                      "albedo": [0.8, 0.5, 0.5],
+                      "roughness": 0.0
+                    }
+                  }
+            ] 
+        } 
+}
